@@ -1,5 +1,7 @@
 # Minesweeper
-A simple minesweeper game made in Python. Uses Pygame library.
+A simple minesweeper game made in Python. 
+
+Uses Pygame library.
 
 Screenshot:
 
