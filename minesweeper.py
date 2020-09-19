@@ -146,6 +146,9 @@ class Menu:
         pygame.draw.rect(screen_var, self.color, self.object)
         score_text = MENU_FONT.render(str(score_var), False, RED)
         time_text = MENU_FONT.render(str(time_var), False, RED)
+        if not IN_GAME:
+            game_over_text = GAME_OVER_FONT.render("Game over! Press 'r' to restart", False, RED)
+            SCREEN.object.blit(game_over_text, GAME_OVER_COORDINATES)
         SCREEN.object.blit(time_text, self.time_coord)
         SCREEN.object.blit(score_text, self.score_coord)
 
@@ -155,9 +158,6 @@ def click(mouse_pos):
     y = int((mouse_pos[1] - MENU_SIZE) / SQUARE_SIZE)
     clicked_square = board.object[y][x]
     game_over = clicked_square.click()
-    if game_over:
-        game_over_text = GAME_OVER_FONT.render("Game over! Press 'r' to restart", False, RED)
-        SCREEN.object.blit(game_over_text, mouse_pos)
     return game_over
 
 
@@ -194,10 +194,11 @@ MENU_SIZE = 40
 MENU_COLOR = WHITE
 SCORE_COORDINATES = (5, 0)
 TIME_COORDINATES = (50, 0)
+GAME_OVER_COORDINATES = (70, 5)
 MENU = Menu(MENU_SIZE, SQUARE_SIZE*SQUARES_X, MENU_COLOR, MENU_FONT, TIME_COORDINATES, SCORE_COORDINATES)
 BOMB_AMOUNT = randint(10, 15)
 SCREEN = Display(SQUARES_X * SQUARE_SIZE, MENU_SIZE + SQUARES_Y * SQUARE_SIZE)
-MINIMUM_BOMBS =  100
+MINIMUM_BOMBS = 100
 MAXIMUM_BOMBS = 100
 
 START_X = 0
