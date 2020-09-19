@@ -6,5 +6,3 @@ Uses Pygame library.
 Screenshot:
 
 ![picture alt](https://github.com/HotDamnCoder/minesweeper/blob/master/image.png)
-
-[WIP]
