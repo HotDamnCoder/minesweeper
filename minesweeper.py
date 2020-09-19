@@ -144,10 +144,10 @@ class Menu:
 
     def update_both(self, screen_var, score_var, time_var):
         pygame.draw.rect(screen_var, self.color, self.object)
-        score_text = MENU_FONT.render(str(score_var), False, RED)
-        time_text = MENU_FONT.render(str(time_var), False, RED)
+        score_text = self.font.render(str(score_var), False, RED)
+        time_text = self.font.render(str(time_var), False, RED)
         if not IN_GAME:
-            game_over_text = GAME_OVER_FONT.render("Game over! Press 'r' to restart", False, RED)
+            game_over_text = self.font.render("Game over! Press 'r' to restart", False, RED)
             SCREEN.object.blit(game_over_text, GAME_OVER_COORDINATES)
         SCREEN.object.blit(time_text, self.time_coord)
         SCREEN.object.blit(score_text, self.score_coord)
@@ -189,7 +189,6 @@ SQUARES_Y = 20
 # SQUARES_y = int(SCREEN_HEIGHT / SQUARE_SIZE)
 pygame.font.init()
 MENU_FONT = pygame.font.SysFont('Comic Sans MS', 15)
-GAME_OVER_FONT = pygame.font.SysFont('Comic Sans MS', 20)
 MENU_SIZE = 40
 MENU_COLOR = WHITE
 SCORE_COORDINATES = (5, 0)

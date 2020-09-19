@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="29fd7d56-1bd5-4f33-b5b7-05a116025d10" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/minesweeper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/minesweeper.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/minesweeper.py" beforeDir="false" afterPath="$PROJECT_DIR$/minesweeper.py" afterDir="false" />
-    </list>
+    <list default="true" id="29fd7d56-1bd5-4f33-b5b7-05a116025d10" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +22,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Snake" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -96,8 +91,15 @@
       <workItem from="1596460361922" duration="77000" />
       <workItem from="1600544788242" duration="329000" />
       <workItem from="1600545132913" duration="90000" />
-      <workItem from="1600545270309" duration="1013000" />
+      <workItem from="1600545270309" duration="1074000" />
     </task>
+    <task id="LOCAL−00001" summary="Minor fix about game over message">
+      <created>1600546324778</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1600546324778</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,6 +117,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Minor fix about game over message" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor fix about game over message" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/minesweeper$minesweeper.coverage" NAME="minesweeper Coverage Results" MODIFIED="1600546240264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
